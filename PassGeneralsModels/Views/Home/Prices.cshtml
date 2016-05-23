@@ -1,0 +1,202 @@
+﻿@{
+    ViewBag.Title = "Course Prices";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="container">
+
+    <br />
+    <div class="opening_para">
+        <p>
+            It doesn't matter whether you are a first time driver, you've taken a few driving lessons already or just need a refresher, we aim to  offer high quality lessons at competitive prices. Have a look at some of the offers we are currently running.The offers below are subject to block booking only.
+        </p>
+    </div>
+    <br />
+
+
+
+    <div class="row">
+        <h6>New Learners</h6>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="text-center">
+                    <img src="~/Content/Images/Gears2.jpg" width="290" height="193" />
+                    <div class="caption">
+                        <p class="hours">Introductory 2 hour package</p>
+                        <p>(Controls and Manoeuvres only) £40.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="text-center">
+                    <img src="~/Content/Images/Dashboard.jpg" width="290" height="193" />
+                    <div class="caption">
+                        <p class="hours">Introductory 4 hour package</p>
+                        <p>(Controls, manoeuvres and tuition) £85.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="text-center">
+                    <img src="~/Content/Images/steering.jpg" width="290" height="193" />
+                    <div class="caption">
+                        <p class="hours">Introductory 6 hour package</p>
+                        <p>Introductory rate for new customers at £126.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end of row-->
+    <br />
+
+    <div class="row">
+        <h6>Regular Learners</h6>
+        <br />
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/wheel.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">2 hour package</p>
+                        <p>(2 hours tuition at standard lesson price) £46.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/nida.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">4 hour package</p>
+                        <p>(4 hours tuition at standard lesson price) £92.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/park.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">6 hour package</p>
+                        <p>(6 hours tuition at standard lesson price) £138.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end of row-->
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/queue2.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">8 hour package</p>
+                        <p>(8 hours tuition at standard lesson price) £184.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/steering.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">10 hour package</p>
+                        <p>(10 hours tuition at reduced cost of £1/hour)* £220.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/pic4.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">20 hour package</p>
+                        <p>(20 hours tuition at reduced cost of £1/hour)* £440.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!--end of row-->
+
+    <br />
+
+    <div class="row">
+        <h6>Refresher Course</h6>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/aircon.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">5 hours</p>
+                        <p>Refresher course for £115.00</p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!--end of row-->
+    <br />
+
+    <div class="row">
+        <h6>Pass Plus</h6>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/Images/Dashboard.jpg" width="290" height="193" />
+                <div class="caption">
+                    <div class="text-center">
+                        <p class="hours">6 hours</p>
+                        <p>
+                            Learn to drive at night and in adverse weather with our Pass Plus course at £150.00
+                        </p>
+                        <input class="btn btn-primary" type="button" value="Buy" onclick="location.href='@Url.Action("Login","Account")'" />
+                        @*<p><a href="Login.html" class="btn btn-primary" role="button">Buy</a></p>*@
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!--end of row-->
+    <br />
+    <p>*only applies if bought as block package </p>
+    <br />
+    <br />
+    <br />
+    </div>

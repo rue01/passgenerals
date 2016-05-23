@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/jquery-ui.js")
+</head>
+
+
+<body>
+    <div class="navbar navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                @*<a href="~/Home/Index"><img src="~/Content/Images/pass_generals_logo.jpg" class="img-responsive" /></a>*@
+                <a href="~/Home/Index" class="logo">Pass Generals logo</a>
+
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "DrivingCourses" ? "active" : "")">@Html.ActionLink("Driving Courses", "DrivingCourses", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Prices" ? "active" : "")">@Html.ActionLink("Prices", "Prices", "Home")</li>
+                    <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "FAQ" ? "active" : "")">@Html.ActionLink("FAQ", "FAQ", "Home")</li>
+                    @Html.Partial("_LoginPartial")
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @*@ViewBag.TheEmail="Having trouble? Send us a message."*@
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Pass <span>Generals</span> Driving School</h3>
+            <p class="footer-links">
+                @Html.ActionLink("Home", "Index", "Home")
+                |
+                @Html.ActionLink("Our Services", "DrivingCourses", "Home")
+                |
+                @Html.ActionLink("FAQ", "FAQ", "Home")
+                |
+                @Html.ActionLink("Terms", "Terms", "Home")
+            </p>
+            <p class="footer-company-name">Copyright &copy; passgenerals.co.uk 2016</p>
+
+            <div class="footer-icons">
+                <a href="http://passgenerals.tel/"><span class="fa-facebook"></span></a>
+                <a href="https://twitter.com/passgenerals"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>Contact Us</p>
+            @using (Html.BeginForm())
+            { 
+                    <input type="email" name="email" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" value="Send" class="btn btn-default" />
+
+            <h3>@ViewBag.TheEmail</h3> @*(APPLY ACTION FILTER METHOD FOR ONACTIONEXECUTED).
+                                           ALSO TOGGLE COLLAPSE BUTTON NOT SHOWING DUE TO BACKGROUND COLOUR OF NAVBAR*@
+            }
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/questions.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

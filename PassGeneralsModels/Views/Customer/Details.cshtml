@@ -1,0 +1,112 @@
+﻿@model PassGeneralsModels.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Customer Dashboard</h2>
+<br/>
+@*/******************************** MOVE TO CUSTOMERVIEWMODEL DETAILS PAGE******************************/ *@
+<div id="personal_details">
+    <h3>Personal Details</h3>
+    <br/>
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.ApplicationUserId)
+        @Html.HiddenFor(model => model.CustomerId)
+        @*<dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerFirstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerFirstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerLastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerLastname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPhone)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) | @*Create an edit page i.e. Customer=> Edit*@
+        @*@Html.ActionLink("New customer?", "Create", new { id = Model.CustomerId })*@
+    </p>
+</div>
+<br/>
+<div id="booking_info">
+    <h3>Booking Information</h3>
+    <br />
+    @*<dl class="dl-horizontal">
+        @*<dt>
+                @Html.DisplayNameFor(model => model.User.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.User.Email)
+            </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerFirstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerFirstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerLastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerLastname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerPhone)
+        </dd>
+
+    </dl>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.CustomerId }) @*Create an edit page i.e. Customer=> Edit*
+    </p>*@
+</div>
+

@@ -1,0 +1,58 @@
+﻿@model PassGeneralsModels.Models.Lesson
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lesson Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.customer.CustomerFirstname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer.CustomerFirstname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LessonType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LessonType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfLesson)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfLesson)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DurationOfLesson)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DurationOfLesson)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit") |  @*, new { id = Model.LessonId }) |*@
+    @Html.ActionLink("Back to Lesson Dashboard", "Index")
+</p>

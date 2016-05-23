@@ -1,0 +1,482 @@
+﻿body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    padding-bottom: 20px;
+    background-color: #292c2f;
+    color: #000;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
+}
+
+.content{
+    /*padding: 30px;*/
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.container{
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+h2{
+    text-align: center;
+    border-bottom-width: 5px;
+    border-bottom-style: groove;
+    border-bottom-color: rebeccapurple;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top: 90px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h5{
+    font-weight: bold;
+}
+
+h6{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.container p, .col-lg-6 h4{
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+.navbar-default {
+  padding: 20px 0px;
+  max-height: 90px;
+  min-width: 100%;
+  background-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+  background-image: -o-linear-gradient(top, #fff 0, #fff 100%);
+  width: 80%;
+  background-color: #5c666b;
+}
+
+/****************************************************************/
+.navbar{
+    min-height:86px;
+    position: absolute;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    width: 80%;
+    margin: 18px auto 50px;
+}
+
+.navbar-header{
+    height:90px;
+}
+
+.navbar-right{
+    margin-right: 0px;
+}
+
+.navbar-right li{
+    color: #292c2f;
+}
+
+.navbar-nav> li > a{
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.navbar-collapse{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 15px;
+
+}
+
+.logo {
+    background-image: url('Images/pass_generals_logo.jpg');
+    display: block;
+    height: 88px;
+    width: 90px;
+    text-indent: -9999px;
+}
+
+/*****************************Home*****************************/
+
+.main h1{
+    font-weight: bold;
+}
+
+.jumbotron{
+    background-color: #fff;
+}
+
+.jumbotron h1 span{
+    color: #16701c;
+}
+
+.index-bottom p, .index-bottom h4{
+    margin-left: 0px;
+}
+
+.col-lg-6 h2{
+    margin-top: 20px;
+}
+
+.col-lg-12 .well{
+    color: red;
+    font-size: 18px;
+}
+.col-lg-6 p span{
+    font-weight: bold;
+    color: #593cee;
+}
+
+.header{
+	background-color: #333333;
+}
+
+.img-responsive{
+    display: block;
+    margin: 0 auto;
+}
+
+.car{
+    float: right;
+    margin: 0 20px 20px;
+    /*width: 150px;*/
+    /*height: 200px;*/
+}
+
+.car img{
+    width: 250px;
+    height: 300px;
+}
+
+/*************************Driving Courses*************************/
+.col-md-2 p, .col-md-3 p, .col-md-5 p{
+    margin-left:0px;
+}
+
+.date-form{ 
+    margin: 10px; 
+}
+
+label.control-label span{ 
+    cursor: pointer; 
+}
+
+.input-group{
+    width: 180px;
+    float: left;
+}
+
+/******************************Prices******************************/
+#pricedropdown{
+    margin-bottom:100px;
+}
+
+#menu1{
+    width: 160px;
+}
+
+.thumbnail{
+    width: 300px;
+    height: 360px;
+}
+
+.thumbnail .caption{
+    width: 300px;
+    height: 130px;
+}
+
+.hours{
+    font-size: 16px;
+}
+
+.row{
+    margin: 0 30px;
+}
+/*******************************FAQ*******************************/
+.login li{
+    float: right;
+}
+
+#accordion{
+	margin-left:50px;
+}
+
+#accordion h5{
+    font-weight: normal;
+}
+
+#accordion a:hover {
+    text-decoration: none;
+}
+
+
+/**************************Login/SignUp****************************/
+.control-group{
+    margin-bottom: 6px;
+}
+
+.controls .btn{
+    margin-top: 20px;
+}
+
+#bottomspace {
+    padding-bottom: 140px
+}
+
+
+@media only screen and (max-width: 420px){
+    
+   
+    .container{
+    width: 100%;
+    font-size: 1.0em;
+    }
+}
+
+
+
+
+
+
+/****************************Footer***********************************/
+
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+    font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	 color: #16701c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+/**********************************************After Login*********************************************************************************/
+
+/******************Customer Dashboard****************************/
+#personal_details, #booking_info{
+    border: 1px solid #5c666b;
+    margin: 40px;
+    padding-left: 35px;
+    text-decoration-style: none;
+}
+
+#booking_info {
+    margin-bottom: 150px;
+}
